@@ -1,0 +1,11 @@
+<!-- pais-formulario.component.html -->
+<form (ngSubmit)="submitForm()" class="formulario-pais">
+  <div class="form-group">
+    <label for="nombre">Nombre del País:</label>
+    <input type="text" id="nombre" [(ngModel)]="nombre" name="nombre" required>
+  </div>
+  <div class="form-group">
+    <button type="submit">Guardar</button>
+  </div>
+</form>
+

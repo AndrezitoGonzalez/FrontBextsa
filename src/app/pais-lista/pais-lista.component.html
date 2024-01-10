@@ -1,0 +1,19 @@
+<!-- pais-lista.component.html -->
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pais of paises">
+      <td>{{ pais.id }}</td>
+      <td>{{ pais.nombre }}</td>
+      <td>        
+        <button (click)="eliminarPais(pais.id)">Eliminar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
